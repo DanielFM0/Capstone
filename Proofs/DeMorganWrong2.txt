@@ -1,0 +1,18 @@
+not (P and Q)
+not P or not Q
+1. not (P and Q). prem
+2. not (not P or not Q). ass(a)
+3. not P. ass(b)
+4. not P or not Q. Idisj, 3
+5. not (not P or not Q) and (not P or not Q). Iconj, 2, 4, endass(b)
+6. not not P. Ineg, 3-5
+7. P. DNE, 6
+8. not Q. ass(c)
+9. not P or not Q. Idisj, 8
+10. not (not P or not Q) and (not P or not Q). Iconj, 2, 9, endass(c)
+11. not not Q. Ineg, 8-10
+12. Q. DNE, 11
+13. P and Q. Iconj, 7, 12, endass(a)
+14. (P and Q) and not (P and Q). Iconj, 13, 1
+15. not not (not P or not Q). Ineg, 2-14
+16. not P or not Q. DNE, 15
